@@ -1,8 +1,8 @@
 void setup(){
-	size(1000,500);
+	size(1000, 500);
 }
 
 void draw(){
 	colorMode(HSB);
-	background(random(255),255,255);
+	background(random(255), 255, 255);
 }
