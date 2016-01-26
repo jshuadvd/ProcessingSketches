@@ -1,10 +1,10 @@
 int numAssets = 50;
 
 HGridLayout layout = new HGridLayout();
-layout.startX(100);
-layout.startY(100);
-layout.spacing(200, 200);
-layout.cols(10);
+	.startX(100);
+  .startY(100);
+  .spacing(200, 200);
+  .cols(10);
 
 void setup(){
 	size(1000, 500);
