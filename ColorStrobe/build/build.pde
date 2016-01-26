@@ -1,3 +1,7 @@
+int numAssets = 50;
+
+HGridLayout layout = new HGridLayout();
+
 void setup(){
 	size(1000, 500);
 }
