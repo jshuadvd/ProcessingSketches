@@ -1,18 +1,18 @@
 HBox d;
 
 void setup(){
-	size(600,600,P3D);
+	size(600, 600, P3D);
 	H.init(this).background(#202020).use3D(true);
 	smooth();
 
-	for (int i = 0; i<100; i++){
+	for (int i = 0; i < 100; i++){
 		d = new HBox();
 		d
-			.depth( (int)random(25,125) )
-			.width( (int)random(25,125) )
-			.height( (int)random(25,125) )
+			.depth( (int)random(25, 125) )
+			.width( (int)random(25, 125) )
+			.height( (int)random(25, 125) )
 			.strokeWeight(1)
-			.stroke(#FF3300)
+			.stroke(#00ffb3)
 			.fill(#111111, 150)
 			.rotationX( (int)random(360) )
 			.rotationY( (int)random(360) )
