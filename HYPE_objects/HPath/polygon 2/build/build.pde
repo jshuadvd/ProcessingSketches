@@ -8,7 +8,7 @@ void setup(){
 	for (int i = 0; i < 100; i++){
 		d = new HPath();
 		d
-			.polygon( (int)random(3,9) )
+			.polygon( (int)random(3, 9) )
 			.strokeWeight(1)
 			.stroke(#00ffd9)
 			.fill(#111111)
