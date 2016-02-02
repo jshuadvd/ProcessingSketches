@@ -12,7 +12,7 @@ void setup(){
 			.strokeWeight(1)
 			.stroke(#a600ff)
 			.fill(#111111)
-			.size( (int)random(50,150), (int)random(75,175) )
+			.size( (int)random(50, 150), (int)random(75,175) )
 			.loc( (int)random(width), (int)random(height) )
 			.anchorAt(H.CENTER)
 		;
