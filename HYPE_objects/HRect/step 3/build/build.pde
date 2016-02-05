@@ -1,7 +1,7 @@
 HRect d;
 
 void setup(){
-	size(600,600);
+	size(600, 600);
 	H.init(this).background(#202020);
 	smooth();
 
