@@ -14,7 +14,7 @@ void setup(){
 			.strokeWeight(1)
 			.stroke(#00baff)
 			.fill(#111111)
-			.loc( (int)random(width), (int)random(height), (int)random(-100,100) )
+			.loc( (int)random(width), (int)random(height), (int)random(-100, 100) )
 			.anchorAt(H.CENTER)
 		;
 
