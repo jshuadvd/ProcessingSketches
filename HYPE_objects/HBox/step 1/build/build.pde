@@ -1,7 +1,7 @@
 HBox d;
 
 void setup(){
-	size(600,600,P3D);
+	size(600, 600, P3D);
 	H.init(this).background(#202020).use3D(true);
 	smooth();
 
