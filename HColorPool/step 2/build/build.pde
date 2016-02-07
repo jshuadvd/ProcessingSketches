@@ -8,14 +8,17 @@ void setup(){
 
 	colors = new HColorPool()
 			.add(#FFFFFF)
-			.add(#FFFFFF)
-			.add(#FFFFFF)
-			.add(#FFFFFF)
-			.add(#FFFFFF)
-			.add(#FFFFFF)
-			.add(#FFFFFF)
-			.add(#FFFFFF)
-			.add(#FFFFFF)			
+			.add(#ECECEC)
+			.add(#CCCCCC)
+			.add(#333333)
+			.add(#0095A8)
+			.add(#00616F)
+			.add(#FF3300)
+			.add(#FF6600)
+			// .add(#FF33FF)
+			// .add(#FF66FF)
+			// .add(#0033FF)
+			// .add(#0066FF)
 	;
 
 	for (int i = 0; i < 100; i++){

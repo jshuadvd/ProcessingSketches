@@ -17,18 +17,34 @@ import java.io.IOException;
 public class build extends PApplet {
 
 HRect d;
+HColorPool colors;
 
 public void setup(){
 	
 	H.init(this).background(0xff202020);
 	
 
+	colors = new HColorPool()
+			.add(0xffFFFFFF)
+			.add(0xffECECEC)
+			.add(0xffCCCCCC)
+			.add(0xff333333)
+			.add(0xff0095A8)
+			.add(0xff00616F)
+			.add(0xffFF3300)
+			.add(0xffFF6600)
+			.add(0xffFF33FF)
+			.add(0xffFF66FF)
+			.add(0xff0033FF)
+			.add(0xff0066FF)
+	;
+
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
 		d
 			.strokeWeight(1)
-			.stroke(0xffff00d6)
-			.fill(0xff111111)
+			.stroke(0xff000000)
+			.fill( colors.getColor() )
 			.size( (int)random(25, 125) )
 			.rotate( (int)random(360) )
 			.loc( (int)random(width), (int)random(height) )
