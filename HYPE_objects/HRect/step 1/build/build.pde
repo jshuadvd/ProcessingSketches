@@ -1,4 +1,5 @@
 HRect d;
+HColorPool colors;
 
 void setup(){
 	size(600, 600);
