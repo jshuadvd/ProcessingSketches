@@ -30,8 +30,8 @@ public void setup(){
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
 		d
-			.strokeWeight(1)
-			.stroke(0xffff00d6)
+			.strokeWeight(3)
+			// .stroke(#ff00d6)
 			.fill(0xff111111)
 			.size( (int)random(25, 125) )
 			.rotate( (int)random(360) )
