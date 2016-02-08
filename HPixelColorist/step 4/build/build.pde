@@ -7,7 +7,7 @@ void setup(){
 	smooth();
 
 	// H.add(new HImage("colored-bg.jpg"));
-	colors = new HPixelColorist("colored-bg-2.jpg").fillAndStrokeOnly();
+	colors = new HPixelColorist("colored-bg-2.jpg").fillAndStroke();
 
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
