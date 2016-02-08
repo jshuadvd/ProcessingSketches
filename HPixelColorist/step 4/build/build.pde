@@ -7,14 +7,15 @@ void setup(){
 	smooth();
 
 	// H.add(new HImage("colored-bg.jpg"));
-	colors = new HPixelColorist("colored-bg-2.jpg").fillAndStroke();
+	colors = new HPixelColorist("colored-bg.jpg").fillAndStroke();
 
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
 		d
 			.strokeWeight(3)
+			.alpha(100)
 			// .stroke(#ff00d6)
-			.fill(#111111)
+			// .fill(#111111)
 			.size( (int)random(25, 125) )
 			.rotate( (int)random(360) )
 			.loc( (int)random(width), (int)random(height) )
