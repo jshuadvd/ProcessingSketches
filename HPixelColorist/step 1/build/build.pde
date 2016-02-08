@@ -1,9 +1,12 @@
 HRect d;
+HPixelColorist colors;
 
 void setup(){
 	size(600, 600);
 	H.init(this).background(#202020);
 	smooth();
+
+	H.add(new HImage("colored-bg.jpg"));
 
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
