@@ -7,6 +7,7 @@ void setup(){
 	smooth();
 
 	H.add(new HImage("colored-bg.jpg"));
+	colors = new HPixelColorist("colored-bg.jpg").fillOnly();
 
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
@@ -19,6 +20,7 @@ void setup(){
 			.loc( (int)random(width), (int)random(height) )
 			.anchorAt(H.CENTER)
 		;
+		colors.applyColor(d);
 		H.add(d);
 	}
 
