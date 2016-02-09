@@ -26,7 +26,7 @@ public void setup(){
 
 	colors = new HColorField(width, height)
 		.addPoint(0, height / 2, 0xffFF3300, 0.3f)
-		.addPoint(width, 0xff0095A8, 0.3f)
+		.addPoint(width, height / 2, 0xff0095A8, 0.3f)
 		.fillOnly()
 	;
 
