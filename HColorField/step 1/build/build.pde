@@ -6,11 +6,13 @@ void setup(){
 	H.init(this).background(#202020);
 	smooth();
 
+	colors = new HColorField();
+
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
 		d
 			.noStroke()
-			.fill(#111111)
+			.fill(#000000)
 			.size( (int)random(25, 125) )
 			.rotate( (int)random(360) )
 			.loc( (int)random(width), (int)random(height) )
