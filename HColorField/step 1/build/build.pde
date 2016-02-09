@@ -7,7 +7,8 @@ void setup(){
 	smooth();
 
 	colors = new HColorField(width, height)
-				addPoint(width / 2, height / 2)
+		.addPoint(width / 2, height / 2, #FF3300, 0.3)
+		.fillOnly()
 	;
 
 	for (int i = 0; i < 100; i++){
