@@ -10,16 +10,17 @@ void setup(){
 		.addPoint(0, height / 2, #FF3300, 0.5)
 		.addPoint(width, height / 2, #0095A8, 0.5)
 
-		.addPoint(width / 2, 0, #FFFF00, 0.5)
-		.addPoint(width / 2, height, #00FF00, 0.5)
-		.fillOnly()
+		.addPoint(width / 2, 0, #FFFF00, 0.3)
+		.addPoint(width / 2, height, #00FF00, 0.3)
+		.fillAndStroke()
 	;
 
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
 		d
-			.noStroke()
-			.fill(#000000)
+			.strokeWeight(2)
+			.stroke(#000000)
+			.fill(#000000, 100)
 			.size( (int)random(25, 125) )
 			.rotate( (int)random(360) )
 			.loc( (int)random(width), (int)random(height) )
