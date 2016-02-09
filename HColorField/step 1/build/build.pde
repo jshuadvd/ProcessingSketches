@@ -6,7 +6,9 @@ void setup(){
 	H.init(this).background(#202020);
 	smooth();
 
-	colors = new HColorField();
+	colors = new HColorField(width, height)
+				addPoint(width / 2, height / 2)
+	;
 
 	for (int i = 0; i < 100; i++){
 		d = new HRect();
