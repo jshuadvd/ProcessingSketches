@@ -21,6 +21,7 @@ void setup(){
 			.loc( (int)random(width), (int)random(height) )
 			.anchorAt(H.CENTER)
 		;
+		colors.applyColor(d);
 		H.add(d);
 	}
 
