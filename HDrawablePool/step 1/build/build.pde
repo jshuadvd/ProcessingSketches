@@ -8,6 +8,7 @@ void setup(){
 	pool = new HDrawablePool(100);
 	pool.autoAddToStage()
 		.add(new HRect())
+		.add(new HRect().rounding(10))
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
