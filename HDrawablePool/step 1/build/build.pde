@@ -11,7 +11,7 @@ void setup() {
 			.onCreate(
 					new HCallBack() {
 						public void run(Object obj) {
-
+								HDrawable d = (HDrawable) obj;
 						}
 					}
 
