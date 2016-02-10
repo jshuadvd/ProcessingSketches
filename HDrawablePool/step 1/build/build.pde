@@ -6,6 +6,19 @@ void setup() {
 	smooth();
 
 	pool = new HDrawablePool(100);
+	pool.autoAddToStage()
+			.add(new HRect())
+			.onCreate(
+					new HCallBack() {
+						public void run(Object obj) {
+
+						}
+					}
+
+				)
+			.requestAll()
+
+	;
 
 	H.drawStage();
 }
