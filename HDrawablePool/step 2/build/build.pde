@@ -7,8 +7,12 @@ void setup(){
 
 	pool = new HDrawablePool(100);
 	pool.autoAddToStage()
-		.add(new HRect(), 20)
-		.add(new HRect().rounding(10))
+		.add(new HShape("svg1.svg"))
+		.add(new HShape("svg2.svg"))
+		.add(new HShape("svg3.svg"))
+		.add(new HShape("svg4.svg"))
+		.add(new HShape("svg5.svg"))
+		.add(new HShape("svg6.svg"))
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
