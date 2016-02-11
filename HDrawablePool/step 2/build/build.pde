@@ -15,7 +15,7 @@ void setup(){
 		.add(new HShape("svg3.svg"))
 		.add(new HShape("svg4.svg"))
 		.add(new HShape("svg5.svg"))
-		.add(new HShape("svg6.svg"))
+		.add(new HShape("svg6.svg"), 20)
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
@@ -31,6 +31,7 @@ void setup(){
 						.loc( (int)random(width), (int)random(height) )
 						.anchorAt(H.CENTER)
 					;
+					// d.randomColors(colors.fillOnly());
 					d.randomColors(colors);
 				}
 			}
