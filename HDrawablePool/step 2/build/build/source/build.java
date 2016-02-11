@@ -17,11 +17,14 @@ import java.io.IOException;
 public class build extends PApplet {
 
 HDrawablePool pool;
+HColorPool colors;
 
 public void setup(){
 	
 	H.init(this).background(0xff202020);
 	
+
+	colors = new HColorPool(0xffFFFFFF, 0xffF7F7F7, 0xffECECEC, 0xff333333, 0xff0095A8, 0xff00616F, 0xffFF3300, 0xffFF6600);
 
 	pool = new HDrawablePool(100);
 	pool.autoAddToStage()
@@ -37,14 +40,16 @@ public void setup(){
 					HShape d = (HShape) obj;
 					d
 					  .enableStyle(false)
+						.strokeJoin(ROUND)
+						.strokeCap(ROUND)
 						.strokeWeight(1)
-						.stroke(0xffFF00D6)
-						.fill(0xff111111)
+						.stroke(0xff000000)
 						.size( (int)random(25,125) )
 						.rotate( (int)random(360) )
 						.loc( (int)random(width), (int)random(height) )
 						.anchorAt(H.CENTER)
 					;
+					d.randomColors(colors);
 				}
 			}
 		)
