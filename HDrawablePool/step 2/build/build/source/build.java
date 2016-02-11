@@ -36,6 +36,7 @@ public void setup(){
 				public void run(Object obj) {
 					HShape d = (HShape) obj;
 					d
+					  .enableStyle(false)
 						.strokeWeight(1)
 						.stroke(0xffFF00D6)
 						.fill(0xff111111)
