@@ -16,7 +16,7 @@ void setup(){
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
-					HDrawable d = (HDrawable) obj;
+					HShape d = (HShape) obj;
 					d
 						.strokeWeight(1)
 						.stroke(#FF00D6)
