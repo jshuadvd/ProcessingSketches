@@ -2,7 +2,7 @@ HDrawablePool pool;
 HColorPool colors;
 
 void setup(){
-	size(600,600);
+	size(600, 600);
 	H.init(this).background(#202020);
 	smooth();
 
@@ -26,7 +26,7 @@ void setup(){
 						.strokeCap(ROUND)
 						.strokeWeight(1)
 						.stroke(#000000)
-						.size( (int)random(25,125) )
+						.size( (int)random(25, 125) )
 						.rotate( (int)random(360) )
 						.loc( (int)random(width), (int)random(height) )
 						.anchorAt(H.CENTER)
