@@ -26,14 +26,14 @@ public void setup(){
 
 	colors = new HColorPool(0xffFFFFFF, 0xffF7F7F7, 0xffECECEC, 0xff333333, 0xff0095A8, 0xff00616F, 0xffFF3300, 0xffFF6600);
 
-	pool = new HDrawablePool(100);
+	pool = new HDrawablePool(10);
 	pool.autoAddToStage()
 		.add(new HShape("mongo1.svg"))
 		.add(new HShape("mongo2.svg"))
 		.add(new HShape("mongo3.svg"))
 		.add(new HShape("mongo4.svg"))
 		.add(new HShape("mongo5.svg"))
-		.add(new HShape("mongo6.svg"), 20)
+		.add(new HShape("mongo6.svg"))
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
