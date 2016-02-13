@@ -10,12 +10,12 @@ void setup(){
 
 	pool = new HDrawablePool(100);
 	pool.autoAddToStage()
-		.add(new HShape("mongo1.svg"))
-		.add(new HShape("mongo2.svg"))
-		.add(new HShape("mongo3.svg"))
-		.add(new HShape("mongo4.svg"))
-		.add(new HShape("mongo5.svg"))
-		.add(new HShape("mongo6.svg"), 20)
+		.add(new HShape("svg1.svg"))
+		.add(new HShape("svg2.svg"))
+		.add(new HShape("svg3.svg"))
+		.add(new HShape("svg4.svg"))
+		.add(new HShape("svg5.svg"))
+		.add(new HShape("svg6.svg"), 20)
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
