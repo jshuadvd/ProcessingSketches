@@ -15,7 +15,7 @@ void setup(){
 		.add(new HShape("mongo3.svg"))
 		.add(new HShape("mongo4.svg"))
 		.add(new HShape("mongo5.svg"))
-		.add(new HShape("mongo6.svg"), 20)
+		.add(new HShape("mongo6.svg"))
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
