@@ -8,7 +8,7 @@ void setup(){
 
 	colors = new HColorPool(#FFFFFF, #F7F7F7, #ECECEC, #333333, #0095A8, #00616F, #FF3300, #FF6600);
 
-	pool = new HDrawablePool(10);
+	pool = new HDrawablePool(50);
 	pool.autoAddToStage()
 		.add(new HShape("mongo1.svg"))
 		.add(new HShape("mongo2.svg"))
@@ -26,7 +26,7 @@ void setup(){
 						.strokeCap(ROUND)
 						.strokeWeight(1)
 						.stroke(#000000)
-						.size( (int)random(50, 300) )
+						.size( (int)random(200, 400) )
 						.rotate( (int)random(360) )
 						.loc( (int)random(width), (int)random(height) )
 						.anchorAt(H.CENTER)
