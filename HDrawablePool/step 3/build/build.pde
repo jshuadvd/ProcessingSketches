@@ -8,14 +8,14 @@ void setup(){
 
 	colors = new HColorPool(#FFFFFF, #F7F7F7, #ECECEC, #333333, #0095A8, #00616F, #FF3300, #FF6600);
 
-	pool = new HDrawablePool(100);
+	pool = new HDrawablePool(10);
 	pool.autoAddToStage()
-		.add(new HShape("svg1.svg"))
-		.add(new HShape("svg2.svg"))
-		.add(new HShape("svg3.svg"))
-		.add(new HShape("svg4.svg"))
-		.add(new HShape("svg5.svg"))
-		.add(new HShape("svg6.svg"), 20)
+		.add(new HShape("mongo1.svg"))
+		.add(new HShape("mongo2.svg"))
+		.add(new HShape("mongo3.svg"))
+		.add(new HShape("mongo4.svg"))
+		.add(new HShape("mongo5.svg"))
+		.add(new HShape("mongo6.svg"))
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
@@ -26,7 +26,7 @@ void setup(){
 						.strokeCap(ROUND)
 						.strokeWeight(1)
 						.stroke(#000000)
-						.size( (int)random(25, 125) )
+						.size( (int)random(50, 300) )
 						.rotate( (int)random(360) )
 						.loc( (int)random(width), (int)random(height) )
 						.anchorAt(H.CENTER)
