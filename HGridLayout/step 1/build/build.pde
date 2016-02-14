@@ -17,7 +17,11 @@ void setup(){
 		.add(new HShape("svg5.svg"))
 		.add(new HShape("svg6.svg"))
 
-		.layout()
+		.layout(
+			new HGridLayout()
+				.startX(0)
+				.startY(0)
+		)
 
 		.onCreate(
 			new HCallback() {
