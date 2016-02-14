@@ -55,7 +55,7 @@ public void setup(){
 						.stroke(0xff000000)
 						// .size( (int)random(25, 125) )
 						.rotate( (int)random(360) )
-						.loc( (int)random(width), (int)random(height) )
+						// .loc( (int)random(width), (int)random(height) )
 						.anchorAt(H.CENTER)
 					;
 					// d.randomColors(colors.fillOnly());
