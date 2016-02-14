@@ -21,6 +21,8 @@ void setup(){
 			new HGridLayout()
 				.startX(0)
 				.startY(0)
+				.spacing(50, 50)
+				.cols(11)
 		)
 
 		.onCreate(
@@ -33,7 +35,7 @@ void setup(){
 						.strokeCap(ROUND)
 						.strokeWeight(1)
 						.stroke(#000000)
-						.size( (int)random(25, 125) )
+						// .size( (int)random(25, 125) )
 						.rotate( (int)random(360) )
 						.loc( (int)random(width), (int)random(height) )
 						.anchorAt(H.CENTER)
