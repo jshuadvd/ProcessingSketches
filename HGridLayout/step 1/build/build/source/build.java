@@ -26,7 +26,7 @@ public void setup(){
 
 	colors = new HColorPool(0xffFFFFFF, 0xffF7F7F7, 0xffECECEC, 0xff333333, 0xff0095A8, 0xff00616F, 0xffFF3300, 0xffFF6600);
 
-	pool = new HDrawablePool(100);
+	pool = new HDrawablePool(121);
 	pool.autoAddToStage()
 		.add(new HShape("svg1.svg"))
 		.add(new HShape("svg2.svg"))
@@ -40,7 +40,7 @@ public void setup(){
 				.startX(0)
 				.startY(0)
 				.spacing(50, 50)
-				.cols(11)
+				.cols(12)
 		)
 
 		.onCreate(
@@ -53,7 +53,7 @@ public void setup(){
 						.strokeCap(ROUND)
 						.strokeWeight(1)
 						.stroke(0xff000000)
-						.anchorAt(H.CENTER)
+						// .anchorAt(H.CENTER)
 					;
 					// d.randomColors(colors.fillOnly());
 					d.randomColors(colors);
