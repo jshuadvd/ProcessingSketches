@@ -19,8 +19,8 @@ void setup(){
 
 		.layout(
 			new HGridLayout()
-				.startX(0)
-				.startY(0)
+				.startX(25)
+				.startY(25)
 				.spacing(50, 50)
 				.cols(11)
 		)
