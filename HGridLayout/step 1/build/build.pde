@@ -15,7 +15,10 @@ void setup(){
 		.add(new HShape("svg3.svg"))
 		.add(new HShape("svg4.svg"))
 		.add(new HShape("svg5.svg"))
-		.add(new HShape("svg6.svg"), 20)
+		.add(new HShape("svg6.svg"))
+
+		.layout()
+
 		.onCreate(
 			new HCallback() {
 				public void run(Object obj) {
