@@ -53,7 +53,7 @@ public void setup(){
 						.strokeCap(ROUND)
 						.strokeWeight(1)
 						.stroke(0xff000000)
-						.anchorAt(H.CENTER)
+						// .anchorAt(H.CENTER)
 						.rotate( (int)random(4) * 90)
 						.size( 50 + ( (int)random(4) * 50 ) )
 					;
