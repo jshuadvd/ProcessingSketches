@@ -36,6 +36,7 @@ void setup(){
 						.strokeWeight(1)
 						.stroke(#000000)
 						// .anchorAt(H.CENTER)
+						.rotate( (int)random(4) * 90)
 					;
 					// d.randomColors(colors.fillOnly());
 					d.randomColors(colors);
