@@ -19,8 +19,8 @@ void setup(){
 
 		.layout(
 			new HGridLayout()
-				.startX(25)
-				.startY(25)
+				.startX(50)
+				.startY(50)
 				.spacing(50, 50)
 				.cols(11)
 		)
@@ -35,8 +35,8 @@ void setup(){
 						.strokeCap(ROUND)
 						.strokeWeight(1)
 						.stroke(#000000)
-						// .anchorAt(H.CENTER)
-						.rotate( (int)random(4) * 90)
+						.anchorAt(H.CENTER)
+						// .rotate( (int)random(4) * 90)
 					;
 					// d.randomColors(colors.fillOnly());
 					d.randomColors(colors);
