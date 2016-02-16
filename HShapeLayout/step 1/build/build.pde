@@ -19,10 +19,7 @@ void setup(){
 
 		.layout(
 			new HShapeLayout()
-				.startX(25)
-				.startY(25)
-				.spacing(50, 50)
-				.cols(11)
+				.target()
 		)
 
 		.onCreate(
