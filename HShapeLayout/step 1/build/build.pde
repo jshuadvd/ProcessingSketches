@@ -21,7 +21,6 @@ void setup(){
 			new HShapeLayout()
 				.target(
 						new HImage("ShapeMap.png")
-
 					)
 		)
 
