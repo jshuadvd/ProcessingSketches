@@ -31,11 +31,8 @@ void setup(){
 					HShape d = (HShape) obj;
 					d
 					  .enableStyle(false)
-						.strokeJoin(ROUND)
-						.strokeCap(ROUND)
-						.strokeWeight(1)
-						.stroke(#000000)
-						// .anchorAt(H.CENTER)
+						.noStroke()
+						.anchorAt(H.CENTER)
 					;
 					// d.randomColors(colors.fillOnly());
 					d.randomColors(colors);
