@@ -19,7 +19,10 @@ void setup(){
 
 		.layout(
 			new HShapeLayout()
-				.target()
+				.target(
+						new HImage("ShapeMap.png")
+
+					)
 		)
 
 		.onCreate(
