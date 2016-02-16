@@ -26,7 +26,7 @@ public void setup(){
 
 	colors = new HColorPool(0xffFFFFFF, 0xffF7F7F7, 0xffECECEC, 0xff333333, 0xff0095A8, 0xff00616F, 0xffFF3300, 0xffFF6600);
 
-	pool = new HDrawablePool(100);
+	pool = new HDrawablePool(2000);
 	pool.autoAddToStage()
 		// .add(new HShape("svg1.svg"))
 		// .add(new HShape("svg2.svg"))
