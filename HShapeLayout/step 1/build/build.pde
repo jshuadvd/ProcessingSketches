@@ -18,7 +18,7 @@ void setup(){
 		// .add(new HShape("svg6.svg"))
 
 		.layout(
-			new HGridLayout()
+			new HShapeLayout()
 				.startX(25)
 				.startY(25)
 				.spacing(50, 50)
