@@ -10,7 +10,7 @@ void setup(){
 													 #F7F7F7,
 													 #ECECEC,
 													 #333333,
-													 #0095A8, 
+													 #0095A8,
 													 #00616F,
 													 #FF3300,
 													 #FF6600
@@ -41,6 +41,7 @@ void setup(){
 						.noStroke()
 						.anchorAt(H.CENTER)
 						.size( (int)random(10, 30) )
+						.rotate( (int)random(360) )
 					;
 					// d.randomColors(colors.fillOnly());
 					d.randomColors(colors);
