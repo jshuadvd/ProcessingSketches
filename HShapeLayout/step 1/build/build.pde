@@ -6,7 +6,15 @@ void setup(){
 	H.init(this).background(#202020);
 	smooth();
 
-	colors = new HColorPool(#FFFFFF, #F7F7F7, #ECECEC, #333333, #0095A8, #00616F, #FF3300, #FF6600);
+	colors = new HColorPool(#FFFFFF,
+													#F7F7F7,
+													#ECECEC,
+													#333333,
+													#0095A8, 
+													#00616F,
+													#FF3300,
+													#FF6600
+													);
 
 	pool = new HDrawablePool(2000);
 	pool.autoAddToStage()
@@ -32,6 +40,7 @@ void setup(){
 					  .enableStyle(false)
 						.noStroke()
 						.anchorAt(H.CENTER)
+						.size( (int)random(10, 30) )
 					;
 					// d.randomColors(colors.fillOnly());
 					d.randomColors(colors);
