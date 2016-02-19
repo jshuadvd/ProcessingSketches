@@ -46,4 +46,5 @@ void setup(){
 	;
 
 	H.drawStage();
+	saveFrame("HGridStep1Render.jpg");
 }
