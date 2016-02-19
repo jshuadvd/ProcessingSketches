@@ -46,5 +46,5 @@ void setup(){
 	;
 
 	H.drawStage();
-	saveFrame("HGridStep1Render.tif");
+	saveFrame("HGridStep1Render.tga");
 }
