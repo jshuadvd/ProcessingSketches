@@ -63,8 +63,9 @@ void saveHiRes(int scaleFactor) {
 		}
 
 		else {
-
+			H.stage().paintAll(hires, false, 1;
 		}
 
 		endRecord();
+		hires.save("render.png");
 }
