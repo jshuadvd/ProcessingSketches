@@ -54,4 +54,17 @@ void draw() {
 
 void saveHiRes(int scaleFactor) {
 		PGraphics hires = createGraphics(width * scaleFactor, height * scaleFactor, JAVA2D);
+
+		beginRecord(hires);
+		hires.scale(scaleFactor);
+
+		if (hires == null) {
+			H.drawStage();
+		}
+
+		else {
+
+		}
+
+		endRecord();
 }
