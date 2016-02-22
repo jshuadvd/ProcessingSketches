@@ -44,7 +44,7 @@ void setup(){
 		)
 		.requestAll()
 	;
-		// saveHiRes();
+		// saveHiRes(10);
 		// noLoop();
 }
 
@@ -52,6 +52,6 @@ void draw() {
 	H.drawStage();
 }
 
-void saveHiRes() {
-
+void saveHiRes(int scaleFactor) {
+		PGraphics hires = createGraphics(width * scaleFactor, height * scaleFactor);
 }
