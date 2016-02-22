@@ -44,8 +44,8 @@ void setup(){
 		)
 		.requestAll()
 	;
-		// saveHiRes(10);
-		// noLoop();
+		saveHiRes(2);
+		noLoop();
 }
 
 void draw() {
@@ -53,5 +53,5 @@ void draw() {
 }
 
 void saveHiRes(int scaleFactor) {
-		PGraphics hires = createGraphics(width * scaleFactor, height * scaleFactor);
+		PGraphics hires = createGraphics(width * scaleFactor, height * scaleFactor, JAVA2D);
 }
