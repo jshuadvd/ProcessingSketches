@@ -44,10 +44,14 @@ void setup(){
 		)
 		.requestAll()
 	;
-
-		noLoop();
+		// saveHiRes();
+		// noLoop();
 }
 
 void draw() {
 	H.drawStage();
+}
+
+void saveHiRes() {
+
 }
