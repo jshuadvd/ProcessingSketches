@@ -45,6 +45,9 @@ void setup(){
 		.requestAll()
 	;
 
+		noLoop();
+}
+
+void draw() {
 	H.drawStage();
-	saveFrame("HGridStep1Render.tga");
 }
