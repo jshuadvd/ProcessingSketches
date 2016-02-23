@@ -45,7 +45,7 @@ void setup(){
 		)
 		.requestAll()
 	;
-		saveVector(2);
+		saveVector();
 		noLoop();
 }
 
@@ -53,7 +53,7 @@ void draw() {
 	H.drawStage();
 }
 
-void saveHiRes(int scaleFactor) {
+void saveVector(int scaleFactor) {
 		PGraphics hires = createGraphics(width * scaleFactor, height * scaleFactor, JAVA2D);
 
 		beginRecord(hires);
