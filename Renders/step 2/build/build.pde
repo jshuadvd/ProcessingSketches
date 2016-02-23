@@ -63,7 +63,7 @@ void saveHiRes(int scaleFactor) {
 		}
 
 		else {
-			H.stage().paintAll(hires, false, 1;
+			H.stage().paintAll(hires, false, 1);
 		}
 
 		endRecord();
