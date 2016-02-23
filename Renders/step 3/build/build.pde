@@ -45,7 +45,7 @@ void setup(){
 		)
 		.requestAll()
 	;
-		saveHiRes(2);
+		saveVector(2);
 		noLoop();
 }
 
