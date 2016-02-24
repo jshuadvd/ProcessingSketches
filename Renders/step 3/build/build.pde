@@ -54,7 +54,7 @@ void draw() {
 }
 
 void saveVector() {
-		PGraphics hires = createGraphics(width * scaleFactor, height * scaleFactor, JAVA2D);
+		PGraphics tmp = null;
 
 		beginRecord(hires);
 		hires.scale(scaleFactor);
