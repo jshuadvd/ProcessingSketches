@@ -55,9 +55,7 @@ void draw() {
 
 void saveVector() {
 		PGraphics tmp = null;
-
-		beginRecord(hires);
-		hires.scale(scaleFactor);
+		tmp = beginRecord(PDF, "render.pdf");
 
 		if (hires == null) {
 			H.drawStage();
