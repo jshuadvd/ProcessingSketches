@@ -3,6 +3,7 @@ import processing.data.*;
 import processing.event.*; 
 import processing.opengl.*; 
 
+import processing.pdf.*; 
 import java.util.*; 
 
 import java.util.HashMap; 
@@ -16,12 +17,13 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
+
 HDrawablePool pool;
 HColorPool colors;
 
 public void setup(){
 	
-	H.init(this).background(H.CLEAR);
+	H.init(this).background(0xff202020);
 	
 
 	colors = new HColorPool(0xffFFFFFF, 0xffF7F7F7, 0xffECECEC, 0xff333333, 0xff0095A8, 0xff00616F, 0xffFF3300, 0xffFF6600);
@@ -62,7 +64,7 @@ public void setup(){
 		)
 		.requestAll()
 	;
-		saveHiRes(2);
+		saveVector();
 		noLoop();
 }
 
@@ -70,11 +72,9 @@ public void draw() {
 	H.drawStage();
 }
 
-public void saveHiRes(int scaleFactor) {
-		PGraphics hires = createGraphics(width * scaleFactor, height * scaleFactor, JAVA2D);
-
-		beginRecord(hires);
-		hires.scale(scaleFactor);
+public void saveVector() {
+		PGraphics tmp = null;
+		tmp = beginRecord(PDF, "render.pdf");
 
 		if (hires == null) {
 			H.drawStage();
