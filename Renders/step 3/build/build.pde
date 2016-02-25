@@ -57,14 +57,13 @@ void saveVector() {
 		PGraphics tmp = null;
 		tmp = beginRecord(PDF, "render.pdf");
 
-		if (hires == null) {
+		if (tmp == null) {
 			H.drawStage();
 		}
 
 		else {
-			H.stage().paintAll(hires, false, 1);
+			H.stage().paintAll(tmp, false, 1);
 		}
 
 		endRecord();
-		hires.save("render.png");
 }
