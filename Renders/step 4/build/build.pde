@@ -47,6 +47,25 @@ void setup(){
 		)
 		.requestAll()
 	;
+	saveVector();
+	noLoop();
+}
 
-	H.drawStage();
+void draw() {
+H.drawStage();
+}
+
+void saveVector() {
+	PGraphics tmp = null;
+	tmp = beginRecord(PDF, "render.pdf");
+
+	if (tmp == null) {
+		H.drawStage();
+	}
+
+	else {
+		H.stage().paintAll(tmp, false, 1);
+	}
+
+	endRecord();
 }
