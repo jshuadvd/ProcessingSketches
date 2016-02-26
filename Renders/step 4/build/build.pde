@@ -58,6 +58,7 @@ H.drawStage();
 
 void saveVector() {
 	PGraphics tmp = null;
+	// Save Render PDF
 	tmp = beginRecord(PDF, "render.pdf");
 
 	if (tmp == null) {
