@@ -15,7 +15,10 @@ void setup(){
 			.rotationX( (int)random(360) )
 			.rotationY( (int)random(360) )
 			.rotationZ( (int)random(360) )
-			.loc( (int)random(width), (int)random(height), (int)random(-100,100) )
+			.loc( (int)random(width),
+						(int)random(height),
+						(int)random(-100,100) 
+			)
 			.anchorAt(H.CENTER)
 		;
 
