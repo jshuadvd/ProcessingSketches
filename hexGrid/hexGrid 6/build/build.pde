@@ -8,7 +8,15 @@ void setup() {
 	smooth();
 
 	cp1 = new HPixelColorist("gradient.jpg").fillOnly();
-	cp2 = new HColorPool(#FFFFFF, #F7F7F7, #ECECEC, #333333, #0095a8, #00616f, #FF3300, #FF6600).fillOnly();
+	cp2 = new HColorPool(#FFFFFF,
+											 #F7F7F7,
+											 #ECECEC,
+											 #333333,
+											 #0095a8,
+											 #00616f,
+											 #FF3300,
+											 #FF6600)
+											 .fillOnly();
 
 	dp1 = new HDrawablePool(88);
 	dp1.autoAddToStage()
@@ -70,5 +78,3 @@ void setup() {
 
 	H.drawStage();
 }
-
-
